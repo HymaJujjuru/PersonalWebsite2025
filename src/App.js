@@ -183,8 +183,8 @@ function Contact() {
   return (
     <div className="section contact" id="contact">
       <h2>Contact</h2>
-      <p>Email: your.email@example.com</p>
-      <p>GitHub: <a href="https://github.com/yourprofile">github.com/yourprofile</a></p>
+      <p>Email: cherryhyma@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/HymaJujjuru">github.com/yourprofile</a></p>
     </div>
   );
 }
