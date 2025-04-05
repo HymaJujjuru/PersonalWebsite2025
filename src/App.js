@@ -6,7 +6,26 @@ function Home() {
   return (
     <div className="section home" id="home">
       <h2>Welcome to My Personal Website</h2>
-      <p>Hi, I'm Hyma Jujjuru, a Computer Science major with a passion for coding and technology!</p>
+      <p>
+        Hi, I'm Hyma Jujjuru, a passionate Computer Science major with a passion for Machine Learning, especially Deep Reinforcement Learning and Large Language Models.
+      </p>
+      <p>
+      I am an aspiring computer science student who loves to take on a challenge, has great communication and problem-solving skills, and
+      passionate about machine learning and AI and analyzing data.
+      </p>
+
+      <p>
+        I’m deeply interested in solving real-world problems using technology and am always looking to learn new skills.
+      </p>
+
+      <p>
+        I’m deeply interested in solving real-world problems using technology and am always looking to learn new skills.
+        Throughout my academic journey, I have developed strong skills in programming, data analysis, and web development. I’ve had the opportunity to work on various projects that involved machine learning algorithms, real-time systems, and web applications.
+      </p>
+
+      <p>
+        Outside of coding, I enjoy cooking, listening to music, and exploring new technological innovations. I believe that technology can empower individuals and transform the way we live and work. I am a very social person and give importance to every relationship I make in life.
+      </p>
     </div>
   );
 }
@@ -151,23 +170,6 @@ function Resume() {
   );
 }
 
-function AboutMe() {
-  return (
-    <div className="section about" id="about">
-      <h2>About Me</h2>
-      <p>
-        Hi, I'm Hyma Jujjuru, a passionate Computer Science major with a focus on Artificial Intelligence and Machine Learning. I’m deeply interested in solving real-world problems using technology and am always looking to learn new skills.
-      </p>
-      <p>
-        Throughout my academic journey, I have developed strong skills in programming, data analysis, and web development. I’ve had the opportunity to work on various projects that involved machine learning algorithms, real-time systems, and web applications.
-      </p>
-      <p>
-        Outside of coding, I enjoy cooking, listening to music, and exploring new technological innovations. I believe that technology can empower individuals and transform the way we live and work.
-      </p>
-    </div>
-  );
-}
-
 function Projects() {
   return (
     <div className="section projects" id="projects">
@@ -198,15 +200,7 @@ function App() {
         <nav>
           <ul>
             <li><Link to="/" onClick={() => setActiveLink('/')}>Home</Link></li>
-            <li>
-              <div className="dropdown">
-                <button className="dropbtn">About</button>
-                <div className="dropdown-content">
-                  <Link to="/about" onClick={() => setActiveLink('/about')}>About Me</Link>
-                  <Link to="/resume" onClick={() => setActiveLink('/resume')}>Resume</Link>
-                </div>
-              </div>
-            </li>
+            <li><Link to="/resume" onClick={() => setActiveLink('/resume')}>Resume</Link></li>
             <li><Link to="/projects" onClick={() => setActiveLink('/projects')}>Projects</Link></li>
             <li><Link to="/contact" onClick={() => setActiveLink('/contact')}>Contact</Link></li>
           </ul>
@@ -216,7 +210,6 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutMe />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
