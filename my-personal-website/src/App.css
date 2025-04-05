@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #282c34;
+  padding: 10px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 15px;
+  position: relative;
+}
+
+nav li a {
+  color: white;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+nav li a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+nav li a.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #282c34;
+  color: white;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  background-color: #444;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #282c34;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+/* Section Styling */
+.section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+  text-align: center;
+}
+
+.about, .projects, .contact {
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+  }
+}
