@@ -5,7 +5,7 @@ import './App.css';
 function Home() {
   return (
     <div className="section home" id="home">
-      <h2>Welcome to My Personal Website</h2>
+      <h2><center>Welcome to My Personal Website</center></h2>
       <p>
         Hi, I'm Hyma Jujjuru, a passionate Computer Science major with a passion for Machine Learning, especially Deep Reinforcement Learning and Large Language Models.
       </p>
@@ -203,6 +203,9 @@ function App() {
             <li><Link to="/resume" onClick={() => setActiveLink('/resume')}>Resume</Link></li>
             <li><Link to="/projects" onClick={() => setActiveLink('/projects')}>Projects</Link></li>
             <li><Link to="/contact" onClick={() => setActiveLink('/contact')}>Contact</Link></li>
+            <li style={{ marginLeft: 'auto' }}>
+              <img src="/logo32.png" alt="Logo" style={{ height: '32px' }} />
+            </li>
           </ul>
         </nav>
       </header>
