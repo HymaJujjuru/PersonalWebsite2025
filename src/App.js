@@ -184,7 +184,7 @@ function Contact() {
     <div className="section contact" id="contact">
       <h2>Contact</h2>
       <p>Email: cherryhyma@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/HymaJujjuru">github.com/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/HymaJujjuru">https://github.com/HymaJujjuru</a></p>
     </div>
   );
 }
